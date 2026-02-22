@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>의약품 성분 조회 시스템</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        #search-form {
+            position: relative;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        #search {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #autocomplete-results {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0 0;
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            background: #fff;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            display: none;
+        }
+
+        #autocomplete-results li {
+            padding: 8px 10px;
+            cursor: pointer;
+            color: #000;
+        }
+
+        #autocomplete-results li:hover {
+            background: #f0f0f0;
+        }
+
+        #search-button {
+            margin-top: 5px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Home Page -->
+    <div id="home-screen">
+        <header>
+            <h1>의약품 성분 조회 시스템</h1>
+            <br>
+            <p>의약품 성분을 쉽고 빠르게 검색하고, 약물 비교 및 알레르기 정보를 제공합니다.</p>
+            <br>
+        </header>
+        <form id="search-form">
+            <input 
+                type="text" 
+                name="search" 
+                id="search" 
+                placeholder="약물 이름을 입력하세요." 
+                autocomplete="off"
+            />
+            <ul id="autocomplete-results"></ul> <!-- 자동완성 창 -->
+            <span id="error-label" style="display: none; color: red; text-align: center; margin-top: 10px;"></span>
+            <button type="button" id="search-button">검색</button>
+        </form>
+    </div>
+
+    <!-- Tabs Screen -->
+    <div id="tabs-screen" style="display: none;">
+        <header>
+            <h1>의약품 성분 조회 시스템</h1>
+            <p>의약품 성분을 쉽고 빠르게 검색하고, 약물 비교 및 알레르기 정보를 제공합니다.</p>
+            <br>
+        </header>
+        <h2>의약품 성분 관련 기능</h2>
+        <div class="tabs">
+            <div class="tab" onclick="openEfficiencyTab('search_efficiency', '성분 조회')">
+                <h3>성분 조회</h3>
+                <p>약 성분 및 효능을 자세히 살펴보세요.</p>
+            </div>
+            <div class="tab" onclick="openAllergyFilterTab('filter_allergy', '알레르기 필터링')">
+                <h3>알레르기 필터링</h3>
+                <p>알레르기 성분을 미리 확인하세요.</p>
+            </div>
+            <div class="tab" onclick="openInteractionTab('search_interaction', '의약품 간 상호작용')">
+                <h3>의약품 간 상호작용</h3>
+                <p>약물 간 상호작용을 확인하세요.</p>
+            </div>
+            <div class="tab" onclick="openSideEffectTab('search_sideEffect', '부작용 및 경고')">
+                <h3>부작용 및 경고</h3>
+                <p>주의사항과 부작용을 확인하세요.</p>
+            </div>
+        </div>
+        <div class="button-group">
+            <button onclick="backToSearch()">다른 약품 검색하기</button>
+        </div>
+    </div>
+
+    <!-- Include Main JavaScript -->
+     
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
