@@ -23,9 +23,9 @@ FastAPI와 MySQL을 활용한 의약품 정보 검색 웹 서비스
 - MySQL
 
 ### Frontend
-- HTML5
-- JavaScript (Vanilla JS)
-- CSS3
+- HTML
+- JavaScript
+- CSS
 
 ---
 
@@ -83,7 +83,7 @@ FastAPI와 MySQL을 활용한 의약품 정보 검색 웹 서비스
 - `/search_all` : 의약품 전체 정보 조회
 - `/autocomplete` : 자동완성 검색
 - `/search_{column}` : 특정 항목 조회
-- `/extract_brackets` : 괄호 내 성분 추출
+- `/search_interaction' : 약물 상호작용 조회
 - `/filter_allergy` : 알레르기 성분 필터링
 
 ---
