@@ -140,6 +140,8 @@ Azure 방화벽 설정으로 인해 외부 환경에서는 DB 연결이 제한�
 
 DB 연결이 제한된 경우 API 호출 시 데이터 조회가 되지 않을 수 있습니다.
 
+---
+
 ## 📷 실행 화면
 
 ### Swagger UI
@@ -154,6 +156,7 @@ Swagger UI에서 `/autocomplete` 엔드포인트를 실행한 결과 화면입�
 ### Frontend 화면
 <img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/042354f3-e5e7-4c9f-b04d-6eb75b043c67" />
 <img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/3720f642-6f82-4deb-b3d0-42253f706317" />
+
 
 ### ⚠ 데모 모드 안내
 
