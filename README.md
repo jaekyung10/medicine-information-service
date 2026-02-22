@@ -83,7 +83,7 @@ FastAPI와 MySQL을 활용한 의약품 정보 검색 웹 서비스
 - `/search_all` : 의약품 전체 정보 조회
 - `/autocomplete` : 자동완성 검색
 - `/search_{column}` : 특정 항목 조회
-- `/search_interaction' : 약물 상호작용 조회
+- `/search_interaction` : 약물 상호작용 조회
 - `/filter_allergy` : 알레르기 성분 필터링
 
 ---
@@ -123,6 +123,16 @@ uvicorn main:app --reload
 3️⃣ Swagger UI 접속
 ```
 http://127.0.0.1:8000/docs
+```
+
+## ⚠ 주의사항
+
+본 프로젝트는 Azure MySQL 데이터베이스를 사용합니다.
+
+Azure 방화벽 설정으로 인해 외부 환경에서는 DB 연결이 제한될 수 있습니다.  
+로컬 환경에서 DB 접근 권한이 허용된 경우 정상적으로 실행됩니다.
+
+DB 연결이 제한된 경우 API 호출 시 데이터 조회가 되지 않을 수 있습니다.
 ```
 
 4️⃣ 프론트엔드 실행  
