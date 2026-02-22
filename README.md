@@ -150,9 +150,16 @@ DB 연결이 제한된 경우 API 호출 시 데이터 조회가 되지 않을 �
 <img width="1766" height="741" alt="image" src="https://github.com/user-attachments/assets/5f474612-c017-4111-9f61-78d255384085" />
 
 Swagger UI에서 `/autocomplete` 엔드포인트를 실행한 결과 화면입니다.
-※ Azure MySQL 외부 접근 제한으로 인해 DB 연결이 제한될 수 있습니다.
 
 ### Frontend 화면
-![Frontend](./frontend.png)
+<img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/042354f3-e5e7-4c9f-b04d-6eb75b043c67" />
+<img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/3720f642-6f82-4deb-b3d0-42253f706317" />
+
+### ⚠ 데모 모드 안내
+
+Azure MySQL 외부 접근 제한으로 인해 일부 환경에서는 DB 연결이 제한될 수 있습니다.  
+시연을 위해 자동완성 기능은 DB 연결 실패 시 데모 데이터로 동작하도록 예외 처리를 추가했습니다.
+
+
 
 
