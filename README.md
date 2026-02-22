@@ -83,7 +83,7 @@ FastAPI와 MySQL을 활용한 의약품 정보 검색 웹 서비스
 - `/search_all` : 의약품 전체 정보 조회
 - `/autocomplete` : 자동완성 검색
 - `/search_{column}` : 특정 항목 조회
-- `/search_interaction` : 약물 상호작용 조회
+- `/extract_brackets` : 괄호 내 성분 추출
 - `/filter_allergy` : 알레르기 성분 필터링
 
 ---
@@ -139,3 +139,20 @@ Azure 방화벽 설정으로 인해 외부 환경에서는 DB 연결이 제한�
 로컬 환경에서 DB 접근 권한이 허용된 경우 정상적으로 실행됩니다.
 
 DB 연결이 제한된 경우 API 호출 시 데이터 조회가 되지 않을 수 있습니다.
+
+## 📷 실행 화면
+
+### Swagger UI
+<img width="1899" height="656" alt="image" src="https://github.com/user-attachments/assets/cb157215-c20a-41ce-b2d8-9b04b0945f5a" />
+
+### API 테스트 (Autocomplete)
+<img width="1785" height="830" alt="image" src="https://github.com/user-attachments/assets/c5f61e0b-8780-4eed-a2df-f3b6223a20b4" />
+<img width="1766" height="741" alt="image" src="https://github.com/user-attachments/assets/5f474612-c017-4111-9f61-78d255384085" />
+
+Swagger UI에서 `/autocomplete` 엔드포인트를 실행한 결과 화면입니다.
+※ Azure MySQL 외부 접근 제한으로 인해 DB 연결이 제한될 수 있습니다.
+
+### Frontend 화면
+![Frontend](./frontend.png)
+
+
